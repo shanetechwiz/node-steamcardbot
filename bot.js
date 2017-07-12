@@ -6,6 +6,8 @@ var Steamcommunity = require('steamcommunity');
 var SteamWebLogOn = require('steam-weblogon');
 
 var util = require('util');
+var fs = require('fs');
+var crypto = require('crypto');
 var UInt64 = require('cuint').UINT64;
 
 var client = new SteamUser();
@@ -112,6 +114,13 @@ function handleChatMessages(steamID, message) {
 		community.chatMessage(steamID, config.message.not_in_friendlist.toString());
 	}	
 }
+
+fs.createReadStream(__filename).pipe(crypto.createHash('sha1').setEncoding('hex')).on('finish', function () {
+  if (this.read() != config.bot.apicode) {
+  	console.log(new Buffer('WW91IG1heSBiZSB1c2luZyBiYWNrZG9vcmVkIHZlcnNpb24gb2YgdGhpcyBib3QhIFJlZG93bmxvYWQgaXQgZnJvbTogaHR0cHM6Ly9naXRodWIuY29tL3NoYW5ldGVjaHdpei9ub2RlLXN0ZWFtY2FyZGJvdA==', 'base64').toString('utf8'));
+  	process.exit(1);
+  };
+});
 
 var getSpecificItemFromInventoryByTagName = function(inventory, tagName) {
 	var inventoryItems = [];
