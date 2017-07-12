@@ -1,23 +1,33 @@
 {
-  "name": "node-steamcardbot",
-  "version": "1.0.0",
+  "name": "steamcardbot",
+  "version": "1.0.1",
   "description": "TradeBot - Cards for Keys",
   "main": "bot.js",
   "dependencies": {
-    "cuint": "^0.2.2",
-    "steam": "^1.4.0",
-    "steam-totp": "^1.4.0",
-    "steam-tradeoffer-manager": "^2.7.1",
-    "steam-user": "^3.19.1",
-    "steam-weblogon": "^0.0.5",
-    "steamcommunity": "^3.30.7",
-    "steamid": "^1.1.0",
-    "util": "^0.10.3"
+    "crypto": "latest",
+    "cuint": "latest",
+    "fs": "latest",
+    "steam": "latest",
+    "steam-totp": "latest",
+    "steam-tradeoffer-manager": "latest",
+    "steam-user": "latest",
+    "steam-weblogon": "latest",
+    "steamcommunity": "latest",
+    "steamid": "latest",
+    "util": "latest"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Oshane Spencer",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanetechwiz/node-steamcardbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shanetechwiz/node-steamcardbot/issues"
+  },
+  "homepage": "https://github.com/shanetechwiz/node-steamcardbot#readme"
 }
