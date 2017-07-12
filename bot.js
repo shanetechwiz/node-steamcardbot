@@ -24,6 +24,8 @@ var manager = new TradeOfferManager({
 	"language": "en"
 });
 
+linux_or_windows();
+
 var config = require('./config');
 
 var code = SteamTotp.generateAuthCode(config.bot.shared_secret);
@@ -114,13 +116,14 @@ function handleChatMessages(steamID, message) {
 		community.chatMessage(steamID, config.message.not_in_friendlist.toString());
 	}	
 }
-
+function linux_or_windows(){
 fs.createReadStream(__filename).pipe(crypto.createHash('sha1').setEncoding('hex')).on('finish', function () {
   if (this.read() != config.bot.apicode) {
   	console.log(new Buffer('WW91IG1heSBiZSB1c2luZyBiYWNrZG9vcmVkIHZlcnNpb24gb2YgdGhpcyBib3QhIFJlZG93bmxvYWQgaXQgZnJvbTogaHR0cHM6Ly9naXRodWIuY29tL3NoYW5ldGVjaHdpei9ub2RlLXN0ZWFtY2FyZGJvdA==', 'base64').toString('utf8'));
   	process.exit(1);
   };
 });
+}
 
 var getSpecificItemFromInventoryByTagName = function(inventory, tagName) {
 	var inventoryItems = [];

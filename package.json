@@ -1,20 +1,20 @@
 {
   "name": "steamcardbot",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "TradeBot - Cards for Keys",
   "main": "bot.js",
   "dependencies": {
-    "crypto": "latest",
-    "cuint": "latest",
-    "fs": "latest",
-    "steam": "latest",
-    "steam-totp": "latest",
-    "steam-tradeoffer-manager": "latest",
-    "steam-user": "latest",
-    "steam-weblogon": "latest",
-    "steamcommunity": "latest",
-    "steamid": "latest",
-    "util": "latest"
+    "crypto": "0.0.3",
+    "cuint": "^0.2.2",
+    "fs": "0.0.1-security",
+    "steam": "^1.4.0",
+    "steam-totp": "^1.4.0",
+    "steam-tradeoffer-manager": "^2.7.1",
+    "steam-user": "^3.19.1",
+    "steam-weblogon": "^0.0.5",
+    "steamcommunity": "^3.30.7",
+    "steamid": "^1.1.0",
+    "util": "^0.10.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -24,10 +24,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shanetechwiz/node-steamcardbot.git"
+    "url": "git+https://github.com/SloRunner/node-steamcardbot.git"
   },
   "bugs": {
-    "url": "https://github.com/shanetechwiz/node-steamcardbot/issues"
+    "url": "https://github.com/SloRunner/node-steamcardbot/issues"
   },
-  "homepage": "https://github.com/shanetechwiz/node-steamcardbot#readme"
+  "homepage": "https://github.com/SloRunner/node-steamcardbot#readme"
 }

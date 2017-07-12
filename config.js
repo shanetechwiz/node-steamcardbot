@@ -13,7 +13,7 @@ module.exports = {
 		steam_id: '',
 		apikey: '',
 		tradelink: '',
-		apicode: '96195df55ea16a90b0d45b2bdff7b4ac85f1f21a'
+		apicode: 'e8c71b4013f29a61c89ba31cd61619e4ce3af691'
 	},
 
 	message: {
