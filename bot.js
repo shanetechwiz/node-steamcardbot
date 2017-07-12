@@ -95,7 +95,7 @@ function handleChatMessages(steamID, message) {
 		}
 		else if(message.indexOf('!buy') > -1) {
 
-			numberOfKeys = parseInt(message.substring(message.indexOf(' ') + 1, message.length));
+			numberOfKeys = message.replace ( /[^\d.]/g, '' );
 
 			if(isNaN(numberOfKeys) == true) { steamFriends.sendMessage(steamID, config.message.invalid_number_of_keys.toString()); }
 			else {
