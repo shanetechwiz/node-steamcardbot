@@ -1,10 +1,12 @@
 {
-  "name": "node-steamcardbot",
+  "name": "steamcardbot",
   "version": "1.0.0",
   "description": "TradeBot - Cards for Keys",
   "main": "bot.js",
   "dependencies": {
+    "crypto": "0.0.3",
     "cuint": "^0.2.2",
+    "fs": "0.0.1-security",
     "steam": "^1.4.0",
     "steam-totp": "^1.4.0",
     "steam-tradeoffer-manager": "^2.7.1",
@@ -19,5 +21,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Oshane Spencer",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SloRunner/node-steamcardbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SloRunner/node-steamcardbot/issues"
+  },
+  "homepage": "https://github.com/SloRunner/node-steamcardbot#readme"
 }

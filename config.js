@@ -12,7 +12,8 @@ module.exports = {
 		shared_secret: '',
 		steam_id: '',
 		apikey: '',
-		tradelink: ''
+		tradelink: '',
+		apicode: 'e8c71b4013f29a61c89ba31cd61619e4ce3af691'
 	},
 
 	message: {
