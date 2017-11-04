@@ -55,7 +55,12 @@ function Login(logOnOptions)
 		if (logonResp.eresult === Steam.EResult.OK) {
 			log('Login Successful!');
 			steamFriends.setPersonaState(Steam.EPersonaState.Online);
-
+                        steamUser.gamesPlayed({
+                          games_played: [{
+                          game_id: '15444025664222527488',
+                          game_extra_info:  '1 CS:GO key -> ' + config.sets_per_key + ' sets'
+                           }]
+                        });
 			steamWebLogOn.webLogOn(function(sessionID, cookies) {								
 				manager.setCookies(cookies, function(err) {
 					if(err) {
