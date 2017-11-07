@@ -35,7 +35,7 @@ var logOnOptions = {
 function log(message) 
 {
 	console.log(new Date().toString() + ' - ' + message);
-	steamFriends.sendMessage(config.admin.Oshane, message.toString());
+	steamFriends.sendMessage(config.admin, message.toString());
 }
 
 function steamIdObjectToSteamId64(steamIdObject) {

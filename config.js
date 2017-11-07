@@ -1,8 +1,6 @@
 module.exports = {
 
-	admin: {
-		Oshane: '76561198103757293'
-	},
+	admin: '76561198103757293',
 
 	bot: {
 		name: '',
